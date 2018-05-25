@@ -7,7 +7,7 @@ provider "azurerm" {}
 
 
 resource "azurerm_network_security_group" "security_group" {
-  name                = "sg-${var.security_group_name}"
+  name                = "sg-${var.name}"
   location            = "${var.location}"
   resource_group_name = "${var.rg_name}"
   tags                = "${var.tags}"
